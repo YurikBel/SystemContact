@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>596</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QListWidget" name="listWidget">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>60</y>
+      <width>351</width>
+      <height>421</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>60</y>
+      <width>301</width>
+      <height>341</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineSearchContact">
+    <property name="geometry">
+     <rect>
+      <x>552</x>
+      <y>441</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>450</y>
+      <width>91</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Найти контакт</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonSearch">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>480</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Найти </string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonAll">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>480</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Сброс</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Контакт</string>
+    </property>
+    <addaction name="actionCreateContact"/>
+    <addaction name="actionEditContact"/>
+    <addaction name="actionRemoveContact"/>
+    <addaction name="actionAppendNumber"/>
+    <addaction name="actionShowContacts"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>Телефон</string>
+    </property>
+    <addaction name="actionEditNumber"/>
+    <addaction name="actionDeleteNumber"/>
+    <addaction name="actionAddNote"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionCreateContact">
+   <property name="text">
+    <string>Создать</string>
+   </property>
+  </action>
+  <action name="actionEditContact">
+   <property name="text">
+    <string>Редактировать</string>
+   </property>
+  </action>
+  <action name="actionRemoveContact">
+   <property name="text">
+    <string>Удалить</string>
+   </property>
+  </action>
+  <action name="actionAppendNumber">
+   <property name="text">
+    <string>Добавить номер телефона</string>
+   </property>
+  </action>
+  <action name="actionShowContacts">
+   <property name="text">
+    <string>Показать номера</string>
+   </property>
+  </action>
+  <action name="actionEditNumber">
+   <property name="text">
+    <string>Редактировать </string>
+   </property>
+  </action>
+  <action name="actionDeleteNumber">
+   <property name="text">
+    <string>Удалить </string>
+   </property>
+  </action>
+  <action name="actionAddNote">
+   <property name="text">
+    <string>Добавить комментарий</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
